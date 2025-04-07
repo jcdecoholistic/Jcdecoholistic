@@ -1,119 +1,134 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JC Deco Holistic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
     }
+
     header {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
+      background-color: #e8e5e1;
+      padding: 20px;
       text-align: center;
     }
+
+    header img {
+      max-width: 200px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #6e665e;
+      font-size: 1.1em;
+    }
+
     nav {
-      background-color: #444;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      padding: 1rem;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-    nav a:hover {
-      background-color: #666;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .catalogo {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .producto {
-      background-color: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .producto img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    footer {
-      background-color: #333;
-      color: white;
+      background-color: #d1cdc8;
+      padding: 10px 0;
       text-align: center;
-      padding: 1rem;
     }
-    .whatsapp {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #25D366;
-      color: white;
-      padding: 1rem;
-      border-radius: 50px;
+
+    nav a {
+      margin: 0 15px;
       text-decoration: none;
+      color: #333;
       font-weight: bold;
     }
-    @media (max-width: 600px) {
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .whatsapp-button {
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #d1cdc8;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @media screen and (max-width: 600px) {
       nav a {
-        flex: 1 0 100%;
-        text-align: center;
+        display: block;
+        margin: 10px 0;
+      }
+
+      header img {
+        width: 150px;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>JC Deco Holistic</h1>
-    <p>Decoración, accesorios y aromas con alma</p>
+    <!-- Reemplazá esta línea con tu logo subido a GitHub si querés que se vea -->
+    <img src="https://via.placeholder.com/200x80?text=JC+Deco+Holistic" alt="JC Deco Holistic">
+    <div class="tagline">Arte y armonía para equilibrar tu energía</div>
   </header>
+
   <nav>
     <a href="#inicio">Inicio</a>
-    <a href="#sobre">Sobre Nosotros</a>
+    <a href="#nosotros">Sobre Nosotros</a>
     <a href="#contacto">Contacto</a>
-  </nav>  <section id="inicio">
+  </nav>
+
+  <section id="inicio">
     <h2>Catálogo de Productos</h2>
-    <div class="catalogo">
-      <div class="producto">
-        <img src="https://via.placeholder.com/300x200" alt="Producto 1">
-        <h3>Producto 1</h3>
-        <p>Descripción breve del producto.</p>
-      </div>
-      <div class="producto">
-        <img src="https://via.placeholder.com/300x200" alt="Producto 2">
-        <h3>Producto 2</h3>
-        <p>Descripción breve del producto.</p>
-      </div>
-      <div class="producto">
-        <img src="https://via.placeholder.com/300x200" alt="Producto 3">
-        <h3>Producto 3</h3>
-        <p>Descripción breve del producto.</p>
-      </div>
-      <!-- Puedes duplicar más bloques "producto" para agregar más items -->
-    </div>
-  </section>  <section id="sobre">
+    <p>Aquí irá tu catálogo completo con imágenes de tus creaciones. Podemos subirlo cuando quieras.</p>
+  </section>
+
+  <section id="nosotros">
     <h2>Sobre Nosotros</h2>
-    <p>En JC Deco Holistic creamos piezas únicas de decoración, accesorios y productos aromáticos hechos a mano. Nos apasiona llenar los espacios de energía positiva y estilo, combinando estética y bienestar.</p>
-  </section>  <section id="contacto">
+    <p>En JC Deco Holistic creamos decoración con alma. Cada pieza está hecha con intención, amor y conexión con la energía del hogar.</p>
+  </section>
+
+  <section id="contacto">
     <h2>Contacto</h2>
-    <p>¿Quieres hacer un pedido o tienes alguna consulta? Escríbenos directamente:</p>
-    <a class="whatsapp" href="https://wa.me/1234567890" target="_blank">Chatea por WhatsApp</a>
-  </section>  <footer>
-    <p>&copy; 2025 JC Deco Holistic. Todos los derechos reservados.</p>
+    <p>¿Querés hacer un pedido o tenés una consulta? Escribinos directamente por WhatsApp.</p>
+    <a class="whatsapp-button" href="https://wa.me/541170592583" target="_blank">Contactanos por WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>Seguinos en nuestras redes</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/jc.deco.h?igsh=ZDM1cWZudHJsdHZi" target="_blank">Instagram</a> |
+      <a href="https://www.facebook.com/profile.php?id=61560942279760&mibextid=ZbWKwL" target="_blank">Facebook</a>
+    </div>
+    <p>&copy; 2025 JC Deco Holistic</p>
   </footer>
 </body>
 </html>
